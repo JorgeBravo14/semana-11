@@ -1,0 +1,19 @@
+/* Animación fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.producto {
+  animation: fadeIn 1s ease-in-out;
+}

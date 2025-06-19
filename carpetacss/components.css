@@ -1,0 +1,78 @@
+/* Navegación */
+.nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.nav__link {
+  color: var(--color-secundario);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.nav__link:hover {
+  color: white;
+}
+
+/* Inicio */
+.inicio {
+  text-align: center;
+  background-color: #f5ebe0;
+}
+.inicio__imagen img {
+  max-width: 300px;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+.inicio__imagen img:hover {
+  transform: scale(1.05);
+}
+
+/* Catálogo */
+.catalogo__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.producto {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.producto:hover {
+  transform: translateY(-5px);
+}
+.producto img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Contacto */
+.contacto {
+  background-color: #eee;
+  padding: 2rem;
+}
+.contacto__formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contacto__formulario input,
+.contacto__formulario textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contacto__formulario button {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.contacto__formulario button:hover {
+  background-color: #2f1a18;
+}

@@ -1,0 +1,18 @@
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  color: var(--color-primario);
+  line-height: 1.6;
+}
+
+.header,
+.footer {
+  background-color: var(--color-primario);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.main {
+  padding: 2rem;
+}
