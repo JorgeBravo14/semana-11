@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabor Andino</title>
+  <link rel="stylesheet" href="/carpetacss/reset.css">
+<link rel="stylesheet" href="/carpetacss/variables.css">
+<link rel="stylesheet" href="/carpetacss/layout.css">
+<link rel="stylesheet" href="/carpetacss/components.css">
+<link rel="stylesheet" href="/carpetacss/main.css">
+
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header__title">Sabor Andino</h1>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li><a href="#inicio" class="nav__link">Inicio</a></li>
+        <li><a href="#catalogo" class="nav__link">Platos</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <section id="inicio" class="inicio">
+      <h2 class="inicio__titulo">Bienvenido a Sabor Andino</h2>
+      <p class="inicio__descripcion">Un viaje culinario por los sabores más auténticos del Perú. Cocina tradicional con un toque gourmet.</p>
+      <figure class="inicio__imagen">
+        <img src="img/portada.jpg" alt="Plato peruano típico" title="Sabor Andino">
+        <figcaption>Sabores del Perú profundo</figcaption>
+      </figure>
+    </section>
+
+    <section id="catalogo" class="catalogo">
+      <h2 class="catalogo__titulo">Nuestros Platos</h2>
+      <div class="catalogo__grid">
+        <!-- 6 platos -->
+        <article class="producto">
+          <img src="img/ceviche.jpg" alt="Ceviche peruano">
+          <h3 class="producto__titulo">Ceviche</h3>
+          <p class="producto__descripcion">Plato emblemático de la costa peruana hecho con pescado fresco, limón, cebolla y ají.</p>
+        </article>
+
+        <article class="producto">
+          <img src="img/lomo_saltado.jpg" alt="Lomo saltado">
+          <h3 class="producto__titulo">Lomo Saltado</h3>
+          <p class="producto__descripcion">Fusión criolla de carne salteada con verduras y papas, influenciada por la cocina china.</p>
+        </article>
+
+        <article class="producto">
+          <img src="img/aji_de_gallina.jpg" alt="Ají de gallina">
+          <h3 class="producto__titulo">Ají de Gallina</h3>
+          <p class="producto__descripcion">Guiso cremoso de gallina deshilachada con ají amarillo, pan y queso. Tradición limeña.</p>
+        </article>
+
+        <article class="producto">
+          <img src="img/rocoto_relleno.jpg" alt="Rocoto relleno">
+          <h3 class="producto__titulo">Rocoto Relleno</h3>
+          <p class="producto__descripcion">Plato picante típico de Arequipa, con rocoto relleno de carne y gratinado con queso.</p>
+        </article>
+
+        <article class="producto">
+          <img src="img/juane.jpg" alt="Juane de la selva">
+          <h3 class="producto__titulo">Juane</h3>
+          <p class="producto__descripcion">Plato selvático envuelto en hoja de bijao, relleno de arroz, pollo y especias amazónicas.</p>
+        </article>
+
+        <article class="producto">
+          <img src="img/cuy_chactado.jpg" alt="Cuy chactado">
+          <h3 class="producto__titulo">Cuy Chactado</h3>
+          <p class="producto__descripcion">Especialidad andina de cuy frito al estilo tradicional, crujiente y sabroso.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2 class="contacto__titulo">Contáctanos</h2>
+      <form class="contacto__formulario">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Sabor Andino. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
